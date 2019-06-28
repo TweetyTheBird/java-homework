@@ -3,7 +3,7 @@ package com.company.two;
 import java.awt.*;
 import java.util.Scanner;
 
-public class homework2 {
+public class Homework2 {
     public static void main(String[] args) {
         //Plosht po 3 strani
         int tA = 5;
@@ -117,6 +117,9 @@ public class homework2 {
             //set min result value from default zero to the first entered number
             if (minMaxResult[0] == 0) {
                 minMaxResult[0] = number4;
+            }
+            if (minMaxResult[1] == 0) {
+                minMaxResult[1] = number4;
             }
             if (number4 == 0) {
                 s.close();
