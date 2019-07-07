@@ -25,38 +25,19 @@ public class Homework2 {
         //with switch
         switch (number) {
             case 0:
-                System.out.println(oddOrEven(number));
-                break;
             case 1:
-                System.out.println(oddOrEven(number));
-                break;
             case 2:
-                System.out.println(oddOrEven(number));
-                break;
             case 3:
-                System.out.println(oddOrEven(number));
-                break;
             case 4:
-                System.out.println(oddOrEven(number));
-                break;
             case 5:
-                System.out.println(oddOrEven(number));
-                break;
             case 6:
-                System.out.println(oddOrEven(number));
-                break;
             case 7:
-                System.out.println(oddOrEven(number));
-                break;
             case 8:
-                System.out.println(oddOrEven(number));
-                break;
             case 9:
                 System.out.println(oddOrEven(number));
                 break;
             default:
                 System.out.println("invalid number");
-                break;
         }
 
         // chetno ili nechetno if
@@ -80,11 +61,6 @@ public class Homework2 {
         int number3 = s.nextInt();
         System.out.println("Is number " + number3 + " prime: " + isPrime(number3));
 
-        //minMax; break on 0
-        int[] minMaxTest = minMaxCalc();
-        System.out.println("min: " + minMaxTest[0] + " ; max: " + minMaxTest[1]);
-
-
     }
 
 
@@ -105,33 +81,6 @@ public class Homework2 {
             }
         }
         return isPrimeResult;
-    }
-
-    public static int[] minMaxCalc() {
-        int[] minMaxResult = new int[2];
-        Scanner s = new Scanner(System.in);
-        while (true) {
-            System.out.println("Enter a number: (break on 0)");
-
-            int number4 = s.nextInt();
-            //set min result value from default zero to the first entered number
-            if (minMaxResult[0] == 0) {
-                minMaxResult[0] = number4;
-            }
-            if (minMaxResult[1] == 0) {
-                minMaxResult[1] = number4;
-            }
-            if (number4 == 0) {
-                s.close();
-                return minMaxResult;
-            }
-            if (minMaxResult[0] > number4) {
-                minMaxResult[0] = number4;
-            }
-            if (minMaxResult[1] < number4) {
-                minMaxResult[1] = number4;
-            }
-        }
     }
 
     public static int triangleAreaBySides(int a, int b, int c) {
